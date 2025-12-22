@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEHEHE Store</title>
+
+    <link href="css/product.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+
+<div class="product-detail">
+    <div class="products-left">
+        <img id="image" class="main-img">
+        <div id="thumbs" class="thumb-list"></div>
+    </div>
+
+    <div class="products-right">
+      <h1 id="decs"></h1>
+      <h1 id="name"></h1>
+      <h3 class="Ps"><strong>Price:</strong></h3>
+      <p id="price"></p>
+      <div class="size-picker">
+        <h3><strong>Size:</strong></h3>
+          <div class="sizes">
+           <button class="size-btn" data-size="S">S</button>
+           <button class="size-btn" data-size="M">M</button>
+           <button class="size-btn" data-size="L">L</button>
+          </div>
+      </div>
+      <h3 class="Qs">QUANTITY</h3>
+      <div class="quantity-box">
+         <button class="qty-btn minus">-</button>
+           <span id="qty-value">1</span>
+         <button class="qty-btn plus">+</button>
+      </div>
+
+      <button id="add-cart">Add to cart</button>
+    </div>
+
+</div>
+<div id="footer"></div>
+<div id="navbar"></div>
+
+
+<script src="js/products.js"></script>
+<script src="js/product.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

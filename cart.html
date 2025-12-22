@@ -1,0 +1,67 @@
+<!-- cart.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEHEHE Store</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("m3G_DKByE-GWosVo4");
+    emailjs.init("Kck56UNrGdUME6ZJs");
+  })();
+</script>
+
+</head>
+
+<body>
+  <h1 class="cart-text">Cart</h1>
+  <section class="cart-section">
+    <div id="cart-list"></div>
+    <div class="total-box" id="total-box">
+    <!-- <div class="total">Total</div> -->
+    <div class="subtotal">
+      <div class="price-box">
+      <div class="total">Total</div>
+    <div id="cart-total"></div>
+      </div>
+    
+    <a href="ShopAll.html" class="more">More Shopping</a>
+    <button onclick="checkout()" class="check">Check Out</button>
+  </div>
+    </div>
+
+    <div class="emty" id="empty-msg">
+      <div class="em-text">Your cart is empty</div>
+      <a href="ShopAll.html" class="shop">More Shopping</a>
+    </div>
+    
+  </section>
+
+
+
+
+
+<div id="navbar"></div>
+<div id="footer"></div>
+
+<script src="js/navbar.js"></script>
+<script src="js/products.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+.register-container {
+  width: 450px;
+  margin: 40px auto;
+  font-family: "Inter", sans-serif;
+  color: #5c4333;
+}
+
+.register-container h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #4a3a31;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #c9b6a8;
+  font-size: 14px;
+  width: 100%;
+  background: white;
+  color: #6a4d3c;
+}
+
+.gender-options {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.phone-row {
+  display: flex;
+}
+
+.phone-row input {
+  width: 70%;
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.phone-row select {
+  width: 30%;
+  border-radius: 0 4px 4px 0;
+    height: 38.5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #5c4333;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #4a3628;
+}
+
+
+
+

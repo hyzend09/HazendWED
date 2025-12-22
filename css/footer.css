@@ -1,0 +1,85 @@
+body {
+  margin: 0;  
+}
+
+.footer {
+  background-color:  #724E33;
+  color: antiquewhite;
+  font-family: 'Playfair Display', serif;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* ==============================
+   FOOTER CONTENT (3 columns)
+============================== */
+.Last-cont {
+  display: flex;
+  justify-content: center;      
+  gap: 30px;                    
+  margin-bottom: 20px;
+}
+
+/* ==============================
+   Mỗi cột trong footer
+============================== */
+.Last-column {
+  flex: 0 0 150px;              
+  text-align: left;
+}
+
+
+.Last-column h3 {
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 24px;             
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+
+.Last-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.Last-column ul li {
+  margin: 8px 0;
+  font-weight: 400;
+  font-size: 14px;             
+  letter-spacing: 0.3px;
+}
+
+.Last-column a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.socials a {
+  font-size: 18px;
+  margin-right: 15px;
+  color: #f3e9de;
+  transition: color 0.3s ease;
+}
+
+.author {
+  border-top: 1px solid #c2a688;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.author a {
+  text-decoration: none;
+  color: #c2a688;
+}

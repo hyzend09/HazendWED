@@ -1,0 +1,58 @@
+body {
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    color:#6D4B32;
+    font-family: 'Gill Sans';
+    font-size: 40px;
+}
+
+
+.input-class {
+    margin-top: 50px;
+    margin-left: 600px;
+    gap: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-family: 'Cambria';
+  color:#6D4B32;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #865c3e;
+}
+
+.sign-in {
+    width: 50%;
+    height: 50px;
+    font-size: 17px;
+    border: none;
+    background-color: #E8DFED;
+    color:#6D4B32;
+    font-weight: 600;
+    font-family: 'Didot';
+}
+
+.register {
+    margin-left:600px;
+    margin-top: 20px;
+    text-decoration: none;
+    color:#6D4B32;
+}   
+
+.register a {
+    text-decoration: none;
+}

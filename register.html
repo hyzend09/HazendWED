@@ -1,0 +1,148 @@
+<!-- register.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEHEHE Store</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/sizepop.css" rel="stylesheet">
+    <link href="css/Shop.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/regis.css" rel="stylesheet">
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("m3G_DKByE-GWosVo4");
+  })();
+</script>
+
+</head>
+
+<body>
+
+<div class="register-container">
+  <h2>Create Account</h2>
+
+  <div class="row">
+    <div class="input-group">
+      <label>First name *</label>
+      <input type="text" id="firstName" required>
+    </div>
+
+    <div class="input-group">
+      <label>Last name *</label>
+      <input type="text" id="lastName" required>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label>Gender</label>
+    <div class="gender-options">
+      <label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other / prefer not to say</label>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label>Birthday</label>
+    <div class="row">
+      <select id="month">
+        <option>Month</option>
+      </select>
+
+      <select id="day">
+        <option>Day</option>
+      </select>
+
+      <select id="year">
+        <option>Year</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label>Country/Region</label>
+    <select id="country">
+      <option>Select a country...</option>
+      <option>Vietnam</option>
+      <option>Thailand</option>
+      <option>Singapore</option>
+      <option>United States</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>Phone number</label>
+    <div class="phone-row">
+      <input type="text" id="phone">
+      <select id="phonePrefix">
+        <option>VN</option>
+        <option>TH</option>
+        <option>SG</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <label>Email address *</label>
+    <input type="email" id="email" required>
+  </div>
+
+  <div class="input-group">
+    <label>Password *</label>
+    <input type="password" id="password" required>
+  </div>
+
+  <button class="submit-btn" onclick="register()">Create Account</button>
+
+</div>
+
+
+
+<script src="js/auth.js"></script>
+
+<div id="navbar"></div>
+<div id="footer"></div>
+<div class="s-popup"></div>
+
+<script>
+  // Fill month
+  const monthSelect = document.getElementById("month");
+  for (let i = 1; i <= 12; i++) {
+    monthSelect.innerHTML += `<option>${i}</option>`;
+  }
+
+  // Fill day
+  const daySelect = document.getElementById("day");
+  for (let i = 1; i <= 31; i++) {
+    daySelect.innerHTML += `<option>${i}</option>`;
+  }
+
+  // Fill year
+  const yearSelect = document.getElementById("year");
+  for (let i = 2025; i >= 1900; i--) {
+    yearSelect.innerHTML += `<option>${i}</option>`;
+  }
+</script>
+
+<script src="js/navbar.js"></script>
+<script src="js/products.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/cart.js"></script>
+<!-- <script src="js/register.js"></script> -->
+
+
+</body>
+</html>

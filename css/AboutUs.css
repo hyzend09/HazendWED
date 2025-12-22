@@ -1,0 +1,217 @@
+.const {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 85vh; /* ngắn hơn màn hình */
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+
+.constLeft {
+  flex: 1 1 50%;
+  background-color: rgb(237, 220, 230);
+  padding: 0 10%; 
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.constLeft p {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.constLeft h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-bottom:10px;
+    text-align: center;
+
+}
+
+
+.constRight {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.constRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+}
+
+
+body {
+  margin: 0;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+.nearlast {
+  display: flex;
+  height: 50vh;
+  position: relative;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.nearlast-left {
+  flex: 2; /* bên trái to hơn */
+  position: relative;
+  background-color: #F3DD8B;
+  justify-content: center; /* canh giữa ngang */
+  align-items: center;     /* canh giữa dọc */
+}
+
+.nearlast-left h2{
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #724E33;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.nearlast-right {
+  flex: 0.7; /* bên phải nhỏ hơn */
+
+}
+
+.nearlast-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  scale: 1;
+  
+}
+
+
+/* ==============================
+   FOOTER (Main Container)
+============================== */
+.footer {
+  background-color:  #724E33;
+  color: antiquewhite;
+  font-family: 'Playfair Display', serif;
+  padding: 50px 0;
+  text-align: center;
+  margin-top: 80px; /* tạo khoảng cách với phần trên */
+}
+
+/* ==============================
+   FOOTER CONTENT (3 columns)
+============================== */
+.Last-cont {
+  display: flex;
+  justify-content: center;      /* căn giữa cả nhóm cột */
+  align-items: flex-start;
+  gap: 30px;                    /* khoảng cách giữa các cột */
+  margin: 0 auto;               /* canh giữa khối */
+  max-width: 900px;             /* giữ khối cân đối */
+  margin-bottom: 20px;
+}
+
+/* ==============================
+   Mỗi cột trong footer
+============================== */
+.Last-column {
+  flex: 0 0 150px;              /* mỗi cột rộng cố định */
+  text-align: left;
+}
+
+/* Tiêu đề từng cột */
+.Last-column h3 {
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 24px;              /* to hơn */
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Danh sách bên trong */
+.Last-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Các mục trong danh sách */
+.Last-column ul li {
+  margin: 8px 0;
+  font-weight: 400;
+  font-size: 14px;              /* nhỏ hơn h3 */
+  letter-spacing: 0.3px;
+}
+
+.Last-column a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Last-column a:hover {
+  color: #d6c4b0;
+}
+
+/* ==============================
+   SOCIAL ICONS
+============================== */
+.socials a {
+  font-size: 18px;
+  margin-right: 15px;
+  color: #f3e9de;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffffff;
+}
+
+/* ==============================
+   FOOTER BOTTOM
+============================== */
+.footer-bottom {
+  border-top: 1px solid #c2a688;
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  flex-wrap: wrap;
+  gap: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-bottom a {
+  color: #c2a688;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ffffff;
+}
