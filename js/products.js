@@ -132,7 +132,7 @@ products.forEach(p => { //dòng này sẽ lặp qua từng sản phẩm trong m�
        
           <div class="icon-circle" onclick="addToPopup(${p.id})"><i class="fa fa-plus"></i></div>
      
-          <div class="icon-circle" onclick="goToDetail(${p.id})"><i class="fa fa-search"></i></div>
+          <div class="icon-circle searching" onclick="goToDetail(${p.id})"><i class="fa fa-search"></i></div>
         
         </div>
       </div>
@@ -165,4 +165,8 @@ document.querySelectorAll(".add-cart").forEach(btn => { //đoạn này giống v
     window.location.href = "cart.html"; // nếu muốn mở trang giỏ hàng
   });
 });
+
+
+
+
 

@@ -50,3 +50,9 @@
     transition: 0.2s;
 }
 
+
+@media (max-width:768px) {
+    #contact-form {
+        width: 90%;
+    }
+}

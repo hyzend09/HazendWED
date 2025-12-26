@@ -84,5 +84,39 @@
   font-family: 'Playfair Display', serif;
 }
 
+@media (max-width:768px) {
+    .collec-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-orm h2     {
+        position: absolute;
+        left: 18%;
+        transform: translate(60%, -800%);
 
+    }
+
+    .text-ling h2 {
+        position: absolute;
+        left: 18%;
+        transform: translate(20%, -800%);
+    }
+
+    .text-char h2 {
+        position: absolute;
+        left: 18%;
+        transform: translate(65%, -700%);
+    }
+
+    .Shop-img {
+        height: 200px;
+    }
+
+    .Shop-img img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 38%;
+    }
+}
 

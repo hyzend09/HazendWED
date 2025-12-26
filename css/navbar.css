@@ -1,3 +1,5 @@
+/* navbar.css */
+
 * {
   margin: 0;
   padding: 0;
@@ -139,3 +141,198 @@ body {
 .icons i:hover {
   color: #666;
 }
+
+.burger {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  width: 60%;
+  height: auto;
+  background: white;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 1px solid #eee;
+  z-index: 999;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#search-icon {
+  position: relative;
+  z-index: 3000 !important;
+}
+
+.search-box {
+  z-index: 4000 !important;
+}
+
+
+
+.search-box {
+    display: none;
+    position: fixed;
+    top: 80px; /* chỉnh cho hợp navbar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    z-index: 2000;
+    
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.search-results {
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.search-results div {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.search-results div:hover {
+    background: #f5f5f5;
+}
+
+
+
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    width: 20%;
+    font-size: 20px;
+  }
+
+  .navbar {
+    position: fixed;
+    gap: 10px;
+    padding: 15px 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .icons {
+    order: 2;
+    margin-left: 120px;
+    margin-top: 10px;
+  }
+
+  .burger {
+        order: 3;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+  #burger:checked ~ .mobile-menu {
+    display: flex;
+  }
+
+
+/* From Uiverse.io by Cevorob */ 
+.burger {
+  position: relative;
+  width: 35px;
+  height: 25px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  margin-right: 20px;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background:rgb(151, 124, 88);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+
+  
+  
+}
+
+

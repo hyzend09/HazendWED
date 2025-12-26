@@ -109,109 +109,36 @@ body {
 }
 
 
-/* ==============================
-   FOOTER (Main Container)
-============================== */
-.footer {
-  background-color:  #724E33;
-  color: antiquewhite;
-  font-family: 'Playfair Display', serif;
-  padding: 50px 0;
-  text-align: center;
-  margin-top: 80px; /* tạo khoảng cách với phần trên */
-}
+@media (max-width: 768px) {
+  .const {
+    flex-direction: column;
+  }
+  .constRight {
+    display: none;
+  }
+  .nearlast {
+    flex-direction: column;
+    padding: 0;
+  }
+  .nearlast-right {
+    order: 1;
+    padding: 0;
+    width : 50%;
+    text-align: center;
+    margin-left: 115px;
+  }
+  .nearlast-right img {
+    text-align: center;
+  }
+  .nearlast-left {
+    order: 2;
+  }
 
-/* ==============================
-   FOOTER CONTENT (3 columns)
-============================== */
-.Last-cont {
-  display: flex;
-  justify-content: center;      /* căn giữa cả nhóm cột */
-  align-items: flex-start;
-  gap: 30px;                    /* khoảng cách giữa các cột */
-  margin: 0 auto;               /* canh giữa khối */
-  max-width: 900px;             /* giữ khối cân đối */
-  margin-bottom: 20px;
-}
+  .nearlast-left h2 {
+    width: 100%;
+  }
+  .const {
+    height: 400px;
+  }
 
-/* ==============================
-   Mỗi cột trong footer
-============================== */
-.Last-column {
-  flex: 0 0 150px;              /* mỗi cột rộng cố định */
-  text-align: left;
-}
-
-/* Tiêu đề từng cột */
-.Last-column h3 {
-  color: #ffffff;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 24px;              /* to hơn */
-  margin-bottom: 15px;
-  letter-spacing: 0.5px;
-}
-
-/* Danh sách bên trong */
-.Last-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Các mục trong danh sách */
-.Last-column ul li {
-  margin: 8px 0;
-  font-weight: 400;
-  font-size: 14px;              /* nhỏ hơn h3 */
-  letter-spacing: 0.3px;
-}
-
-.Last-column a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.Last-column a:hover {
-  color: #d6c4b0;
-}
-
-/* ==============================
-   SOCIAL ICONS
-============================== */
-.socials a {
-  font-size: 18px;
-  margin-right: 15px;
-  color: #f3e9de;
-  transition: color 0.3s ease;
-}
-
-.socials a:hover {
-  color: #ffffff;
-}
-
-/* ==============================
-   FOOTER BOTTOM
-============================== */
-.footer-bottom {
-  border-top: 1px solid #c2a688;
-  padding-top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 13px;
-  flex-wrap: wrap;
-  gap: 40px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.footer-bottom a {
-  color: #c2a688;
-  text-decoration: none;
-}
-
-.footer-bottom a:hover {
-  color: #ffffff;
 }

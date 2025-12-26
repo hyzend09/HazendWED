@@ -90,7 +90,7 @@ function checkout() {
   let itemsHTML = "<ul>";
   cart.forEach(item => {
     total += item.price * item.quantity;
-    itemsHTML += `<li>${item.name} x ${item.quantity}</li>`;
+    itemsHTML += `<li>${item.name} x ${item.quantity} Size: ${item.size}</li>`;
   });
   itemsHTML += "</ul>";
 
@@ -106,6 +106,7 @@ function checkout() {
   // 2️⃣ EMAIL CHO ADMIN
   emailjs.send("service_tt8tero", "template_br87gw8", {
     to_name: "yen180909@gmail.com",
+    total_price: total,
     customer_email: currentUser,
     order_id: orderId,
     total_price: total,
@@ -114,4 +115,13 @@ function checkout() {
 
   alert("Order placed successfully!");
   localStorage.removeItem("cart");
+
+    emailjs.send("service_tt8tero", "template_7pdprsa", {
+    to_email: currentUser,
+    to_name: currentUser,
+    customer_email: currentUser,
+    order_id: orderId,
+    total_price: total,
+    order_items: itemsHTML
+  });
 }

@@ -56,3 +56,25 @@ input {
 .register a {
     text-decoration: none;
 }
+
+
+@media (max-width: 768px) {
+
+
+    .register {
+        margin-left: 100px;
+        margin-top: 20px;
+        text-decoration: none;
+        color: #6D4B32;
+}
+
+    .input-class {
+        margin-top: 50px;
+        margin-left: 100px;
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+}
+}

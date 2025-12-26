@@ -126,3 +126,21 @@ body {
     font-weight: 600;
     font-size: 17px;
 }
+
+
+@media (max-width: 768px) {
+    .product-detail img {
+        margin: 0;
+    }
+
+    .products-right {
+        margin: 0;
+        margin-top: 100px;
+    }
+    .size-btn {
+        width: 25%;
+    }
+    #decs {
+        font-size: 30px;
+    }
+}

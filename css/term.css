@@ -26,3 +26,14 @@ h1 {
 .note span {
     font-family: 'Comic Sans MS';
 }
+
+@media (max-width: 768px) {
+    p {
+        width: 100%;
+        margin: 0;
+        padding: 0px;
+    }
+    .term-con {
+        padding :20px;
+    }
+}

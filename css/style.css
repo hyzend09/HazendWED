@@ -19,32 +19,34 @@ body {
 .hero-left {
   flex: 1;
   overflow: hidden;
-    object-fit: cover;
-    padding: 0;
+  object-fit: cover;
+  padding: 0;
+  display: flex;
 }
 
 .hero-left img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 600px;
   object-fit: cover;
 }
 
 .hero-right {
   flex: 1;
-  padding-top: 500px;
+  padding-top: 200px;
   justify-content: center;
   background-color: #f0ccee;
 }
 
-.hero-right h1 {
+.text-largee {
   font-family: 'Playfair Display', serif;
   font-size: 51px;
   margin-left: 75px;
   color: #63472aed;
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 
-.hero-right p {
+.text-large {
   font-size: 13px;
   color: #665;
   line-height: 1.6;
@@ -54,24 +56,32 @@ body {
 
 .product {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   object-fit: cover;
+  margin-top: 100px;
 }
 
 .product-left {
+  display: flex;
   flex: 1;
+  width: 100%;
 }
 
 .product-left img {
-  width: 100%;
+  width: 50%;
+    height: 600px;
+  object-fit: cover;
 }
 
 .product-right {
   flex: 1;
+  height: 600px;
+  display:flex;
 }
 
 .product-right img {
-  width: 100%;
+  width: 51.3%;
+  object-fit: cover;
 }
 
 
@@ -262,4 +272,98 @@ body {
 #size-options button.selected {
   background-color: black;
   color: white;
+}
+
+.text-small{
+  display: none;
+}
+
+
+
+/* PHẦN CHỈNH MEDIA */
+
+@media (max-width: 768px) {
+
+  /* FIX hero bị trắng bên phải */
+  .hero {
+    display: block;
+    overflow-x: hidden;
+  }
+
+  .hero-right {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  /* FIX width quá lớn */
+  .text-small {
+    display: block;
+    font-size: 16px;
+    color: #665;
+    line-height: 1.6;
+    width: 100%;          /* ← sửa quan trọng */
+    margin-left: 0;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .text-small p {
+    margin-top: 20px;
+    font-size: 15px;
+    width: 100%;           /* ← sửa luôn */
+  }
+
+  .text-large { display: none; }
+
+  /* FIX product overflow */
+  .product {
+    display: block;
+    width: 100%;
+  }
+
+  /* FIX hình sản phẩm */
+  .products-item img {
+    height: 400px;          /* ← không bị kéo dài */
+  }
+
+  .products-item img.front, .products-item img.back {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* transition: opacity 0.5s ease; */
+}
+  
+
+  /* FIX grid bị tràn */
+  #products-list,
+  .items {
+    grid-template-columns: repeat(2, 1fr);  /* 4 cột nhỏ quá → 2 cột */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .products-item .overlay {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+  .searching {
+    display: none;
+  }
+
+
+  /* Đảm bảo toàn trang không overflow */
+  body, html {
+    overflow-x: hidden;
+  }
+
+
 }

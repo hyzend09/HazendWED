@@ -271,3 +271,31 @@
   color: #6D4B32;
   display: block;
 }
+
+@media (max-width: 768px) {
+  .cart-section {
+    margin-left: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .cart-item {
+    width: 100%;
+    height: 200px;
+  }
+
+  #cart-list img {
+    height: 130px;
+  }
+
+  .cart-price {
+    margin-right: 20px;
+  }
+  .em-text {
+    margin-left: 80px;
+  }
+  .shop {
+    width: 80%;
+    margin-left: 80px;
+  }
+}

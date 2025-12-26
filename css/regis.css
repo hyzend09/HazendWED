@@ -52,7 +52,6 @@ select {
 .phone-row input {
   width: 70%;
   border-right: 0;
-  border-radius: 4px 0 0 4px;
 }
 
 .phone-row select {
@@ -79,5 +78,30 @@ select {
 }
 
 
+@media (max-width:768px) {
+  .register-container {
+    padding: 10px;
+  }
+  .row {
+    gap: 10px;
+    width: 95%;
+  }
+
+  input, select {
+    width: 95%;
+  }
+  .phone-row input {
+    width: 65%;
+    border-right: 0;
+}
+
+  #phobePrefix {
+    width: 25%;
+  }
+
+  .submit-btn {
+    width: 95%;
+  }
+}
 
 
